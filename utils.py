@@ -17,3 +17,9 @@ def DATA_ORGANIZER(df,dir):
         src_path = os.path.join(dir, id)
         dst_path = os.path.join(label_dir, id)
         shutil.move(src_path, dst_path)
+
+
+class COMPILE():
+    LOSS = "mse"
+    METRICS = ["accuracy"]
+    OPTIMIZERS = "adam"

@@ -8,13 +8,16 @@ TEST_IMAGES_DIR = os.path.join("Data","test_images")
 
 
 IMAGE_SIZE = (256,256)
+INPUT_SHAPE = [256,256,1]
 VALIDATION_SPLIT = 0.2
 SEED = 1
 ROTATION_RANGE = 20
 FILMODE = "nearest"
 CLASS_MODE = "categorical"
 COLOR_MODE = "grayscale"
-BATCH_SIZE = 32
+BATCH_SIZE = 16
+VAL_BATCH_SIZE = 8
+EPOCHS = 50
 
 SHUFFLE_VALUE = True
 HORIZONTAL_FLIP = True
