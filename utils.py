@@ -1,6 +1,7 @@
 import os
 import shutil
 from config import *
+from tensorflow.keras.callbacks import ModelCheckpoint
 
 def DATA_ORGANIZER(df,dir):
 
@@ -23,3 +24,8 @@ class COMPILE():
     LOSS = "mse"
     METRICS = ["accuracy"]
     OPTIMIZERS = "adam"
+
+
+class CALLBACKS():
+    
+    MODEL_CHECKPOINT_CALLBACK = ModelCheckpoint(verbose=1,filepath="callback_logs")
